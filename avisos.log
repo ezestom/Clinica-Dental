@@ -1,0 +1,149 @@
+[2023-03-1211:16:20] [ INFO ] [OdontologoDaoH2:24] Iniciando una operación gardar un odontologo
+[2023-03-1211:17:42] [ INFO ] [OdontologoDaoH2:24] Iniciando una operación gardar un odontologo
+[2023-03-1211:17:42] [ ERROR] [OdontologoDaoH2:51] Error al guardar un odontologo
+java.lang.ClassNotFoundException: org.h2.Driverx
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:581)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:315)
+	at com.dh.clinica.dao.impl.OdontologoDaoH2.guardar(OdontologoDaoH2.java:27)
+	at com.dh.clinica.dao.impl.OdontologoDaoH2.guardar(OdontologoDaoH2.java:11)
+	at com.dh.clinica.service.OdontoloService.guardar(OdontoloService.java:16)
+	at OdontoloServiceTest.testGuardar(OdontoloServiceTest.java:15)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at junit.framework.TestCase.runTest(TestCase.java:177)
+	at junit.framework.TestCase.runBare(TestCase.java:142)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:130)
+	at junit.framework.TestSuite.runTest(TestSuite.java:241)
+	at junit.framework.TestSuite.run(TestSuite.java:236)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:90)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:235)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54)
+[2023-03-1211:20:07] [ INFO ] [OdontologoDaoH2:24] Iniciando una operación gardar un odontologo
+[2023-03-1211:38:08] [ INFO ] [OdontologoDaoH2:24] Iniciando una operación gardar un odontologo
+[2023-03-1211:38:08] [ ERROR] [OdontologoDaoH2:51] Error al guardar un odontologo
+org.h2.jdbc.JdbcSQLNonTransientConnectionException: La base de datos puede que ya esté siendo utilizada: null. Soluciones Posibles: cierre todas las otras conexiones; use el modo server
+Database may be already in use: null. Possible solutions: close all other connection(s); use the server mode [90020-212]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:678)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.mvstore.db.Store.convertMVStoreException(Store.java:165)
+	at org.h2.mvstore.db.Store.<init>(Store.java:144)
+	at org.h2.engine.Database.<init>(Database.java:324)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:122)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:228)
+	at com.dh.clinica.dao.impl.OdontologoDaoH2.guardar(OdontologoDaoH2.java:30)
+	at com.dh.clinica.dao.impl.OdontologoDaoH2.guardar(OdontologoDaoH2.java:11)
+	at com.dh.clinica.service.OdontoloService.guardar(OdontoloService.java:16)
+	at OdontoloServiceTest.testGuardar(OdontoloServiceTest.java:15)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at junit.framework.TestCase.runTest(TestCase.java:177)
+	at junit.framework.TestCase.runBare(TestCase.java:142)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:130)
+	at junit.framework.TestSuite.runTest(TestSuite.java:241)
+	at junit.framework.TestSuite.run(TestSuite.java:236)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:90)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:235)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54)
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: C:/Users/lucas/db_clinica.mv.db [2.1.212/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:1004)
+	at org.h2.mvstore.FileStore.open(FileStore.java:163)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:449)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:4118)
+	at org.h2.mvstore.db.Store.<init>(Store.java:133)
+	... 33 more
+[2023-03-1211:38:22] [ INFO ] [OdontologoDaoH2:24] Iniciando una operación gardar un odontologo
+[2023-03-1211:38:25] [ INFO ] [OdontologoDaoH2:24] Iniciando una operación gardar un odontologo
+[2023-03-1211:42:52] [ INFO ] [OdontologoDaoH2:24] Iniciando una operación gardar un odontologo
+[2023-03-1211:42:52] [ ERROR] [OdontologoDaoH2:51] Error al guardar un odontologo
+org.h2.jdbc.JdbcSQLNonTransientConnectionException: La base de datos puede que ya esté siendo utilizada: null. Soluciones Posibles: cierre todas las otras conexiones; use el modo server
+Database may be already in use: null. Possible solutions: close all other connection(s); use the server mode [90020-212]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:678)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.mvstore.db.Store.convertMVStoreException(Store.java:165)
+	at org.h2.mvstore.db.Store.<init>(Store.java:144)
+	at org.h2.engine.Database.<init>(Database.java:324)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:122)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:228)
+	at com.dh.clinica.dao.impl.OdontologoDaoH2.guardar(OdontologoDaoH2.java:30)
+	at com.dh.clinica.dao.impl.OdontologoDaoH2.guardar(OdontologoDaoH2.java:11)
+	at com.dh.clinica.service.OdontoloService.guardar(OdontoloService.java:16)
+	at OdontoloServiceTest.testGuardar(OdontoloServiceTest.java:15)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at junit.framework.TestCase.runTest(TestCase.java:177)
+	at junit.framework.TestCase.runBare(TestCase.java:142)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:130)
+	at junit.framework.TestSuite.runTest(TestSuite.java:241)
+	at junit.framework.TestSuite.run(TestSuite.java:236)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:90)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:235)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54)
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: C:/Users/lucas/db_clinica.mv.db [2.1.212/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:1004)
+	at org.h2.mvstore.FileStore.open(FileStore.java:163)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:449)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:4118)
+	at org.h2.mvstore.db.Store.<init>(Store.java:133)
+	... 33 more
+[2023-03-1211:43:01] [ INFO ] [OdontologoDaoH2:24] Iniciando una operación gardar un odontologo
+[2023-03-1212:24:21] [ INFO ] [OdontologoDaoH2:24] Iniciando una operación gardar un odontologo
+[2023-03-1212:26:42] [ INFO ] [PacienteDaoH2:33] Iniciando una operación gardar un Paciente
+[2023-03-1212:26:42] [ INFO ] [DomicilioDaoH2:27] Iniciando una operación gardar un domicilio
+[2023-03-1212:26:42] [ INFO ] [PacienteDaoH2:33] Iniciando una operación gardar un Paciente
+[2023-03-1212:26:42] [ INFO ] [DomicilioDaoH2:27] Iniciando una operación gardar un domicilio
+[2023-03-1212:26:42] [ INFO ] [PacienteDaoH2:33] Iniciando una operación gardar un Paciente
+[2023-03-1212:26:42] [ INFO ] [DomicilioDaoH2:27] Iniciando una operación gardar un domicilio
+[2023-03-1212:26:52] [ INFO ] [PacienteDaoH2:33] Iniciando una operación gardar un Paciente
+[2023-03-1212:26:52] [ INFO ] [DomicilioDaoH2:27] Iniciando una operación gardar un domicilio
+[2023-03-1212:26:52] [ INFO ] [PacienteDaoH2:33] Iniciando una operación gardar un Paciente
+[2023-03-1212:26:52] [ INFO ] [DomicilioDaoH2:27] Iniciando una operación gardar un domicilio
+[2023-03-1212:26:52] [ INFO ] [PacienteDaoH2:33] Iniciando una operación gardar un Paciente
+[2023-03-1212:26:52] [ INFO ] [DomicilioDaoH2:27] Iniciando una operación gardar un domicilio
+[2023-03-1212:27:24] [ INFO ] [OdontologoDaoH2:24] Iniciando una operación gardar un odontologo
